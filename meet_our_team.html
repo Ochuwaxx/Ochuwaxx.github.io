@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Team - Hot Beans Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #005b54;
+            color: #010101;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative; /* Added */
+        }
+        h1 {
+            text-align: center;
+            background-color: #fbeacc;
+            color: #010101;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .team-member {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .member-details {
+            text-align: center;
+            padding: 20px;
+            background-color: #fbeacc;
+            color: #010101;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+        .member-details img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .member-details ul {
+            list-style: none;
+            padding: 0;
+        }
+        .member-details li {
+            margin-bottom: 10px;
+        }
+        /* Added spacing between member-details */
+        .member-details:not(:last-child) {
+            margin-right: 20px;
+        }
+        .navigation-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .navigation-bar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .navigation-bar ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .search-bar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        footer {
+            background-color: #fbeacc;
+            color: #010101;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="Images/hot beans web logo.png" alt="" srcset="" width="40" height="40">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+        <div class="clear"></div>
+        <h1>Profiles of Existing Trainee</h1>
+        <div class="navigation-bar">
+            <ul>
+                <li><a href="index.html" style="color: #010101; background-color: #fbeacc;">Home</a></li>
+                <li><a href="company_profile.html" style="color: #010101; background-color: #fbeacc;">Company Profile</a></li>
+                <li><a href="meet_our_team.html" style="color: #010101; background-color: #fbeacc;">Meet Our Team</a></li>
+                <li><a href="job_opportunities.html" style="color: #010101; background-color: #fbeacc;">Job Opportunities</a></li>
+                <li><a href="apply_now.html" style="color: #010101; background-color: #fbeacc;">Apply Now</a></li>
+                <li><a href="resources.html" style="color: #010101; background-color: #fbeacc;">Resources</a></li>
+                <li><a href="contact_us.html" style="color: #010101; background-color: #fbeacc;">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="team-member">
+            <div class="member-details">
+                <img src="Images/existing trainee 1.png" alt="Team Member 1">
+                <ul>
+                    <li><strong>Name:</strong> Emily Doe</li>
+                    <li><strong>Career Progression Stories:</strong> John started as an intern and quickly progressed to a full-time developer.</li>
+                    <li><strong>Testimonials:</strong> "Working at Hot Beans Web has been an incredible experience. I've learned so much and grown professionally."</li>
+                </ul>
+            </div>
+            
+            <div class="member-details">
+                <img src="Images/existing trainee 2.png" alt="Team Member 2">
+                <ul>
+                    <li><strong>Name:</strong> Jane Smith</li>
+                    <li><strong>Career Progression Stories:</strong> Jane joined as a junior developer and has since become a team lead.</li>
+                    <li><strong>Testimonials:</strong> "Hot Beans Web provides an excellent environment for growth and learning. I'm proud to be part of this team."</li>
+                </ul>
+            </div>
+            
+            <div class="member-details">
+                <img src="Images/existing trainee 3.png" alt="Team Member 3">
+                <ul>
+                    <li><strong>Name:</strong> Michael Johnson</li>
+                    <li><strong>Career Progression Stories:</strong> Michael started as a trainee and now leads several projects at Hot Beans Web.</li>
+                    <li><strong>Testimonials:</strong> "The support and mentorship I've received at Hot Beans Web have been instrumental in my career growth."</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>If you need help or have any questions, feel free to reach out to us!</p>
+            <p>Contact information: <a href="mailto:info@hotbeansweb.co.uk">info@hotbeansweb.co.uk</a> | +44 1045678906 | Poplar High Street, E14 0AF London</p>
+            <p>Links to social media profiles: <a href="https://twitter.com/hotbeansweb" target="_blank">Twitter</a> | <a href="https://facebook.com/hotbeansweb" target="_blank">Facebook</a> | <a href="https://instagram.com/hotbeansweb" target="_blank">Instagram</a></p>
+        </div>
+    </footer>
+</body>
+</html>

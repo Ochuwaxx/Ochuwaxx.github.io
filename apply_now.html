@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now! - Hot Beans Web</title>
+    <style>
+        body {
+            background-color: #005b54;
+            color: #010101;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            background-color: #fbeacc;
+            color: #010101;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .form-section {
+            background-color: #fbeacc;
+            color: #010101;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .form-section h2 {
+            color: #010101;
+        }
+        .required {
+            color: red;
+        }
+        .form-input {
+            margin-bottom: 10px;
+        }
+        .form-input label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-input input,
+        .form-input textarea,
+        .form-input select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-input select {
+            width: auto;
+        }
+        .submit-button {
+            text-align: right;
+            margin-top: 20px;
+        }
+        .submit-button button {
+            padding: 10px 20px;
+            background-color: #005b54;
+            color: #fbeacc;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .navigation-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .navigation-bar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .navigation-bar ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .search-bar {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="logo">
+        <img src="Images/hot beans web logo.png" alt="" srcset="" width="40" height="40">
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+    </div>
+    <div class="clear"></div>
+    <h1>Apply now!</h1>
+    <div class="navigation-bar">
+        <ul>
+            <li><a href="index.html" style="color: #010101; background-color: #fbeacc;">Home</a></li>
+            <li><a href="company_profile.html" style="color: #010101; background-color: #fbeacc;">Company Profile</a></li>
+            <li><a href="meet_our_team.html" style="color: #010101; background-color: #fbeacc;">Meet Our Team</a></li>
+            <li><a href="job_opportunities.html" style="color: #010101; background-color: #fbeacc;">Job Opportunities</a></li>
+            <li><a href="apply_now.html" style="color: #010101; background-color: #fbeacc;">Apply Now</a></li>
+            <li><a href="resources.html" style="color: #010101; background-color: #fbeacc;">Resources</a></li>
+            <li><a href="contact_us.html" style="color: #010101; background-color: #fbeacc;">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="form-section">
+        <p class="required">* All fields are required</p>
+        <form action="#" method="post">
+            <div class="form-input">
+                <h2>Aspiring Role</h2>
+                <select name="aspiring_role">
+                    <option value="Frontend Web Developer">Frontend Web Developer</option>
+                    <option value="Backend Web Developer">Backend Web Developer</option>
+                    <option value="Full Stack Web Developer">Full Stack Web Developer</option>
+                </select>
+            </div>
+            <div class="form-input">
+                <h2>Personal Information</h2>
+                <label for="full_name">Full Name <span class="required">*</span></label>
+                <input type="text" id="full_name" name="full_name" required>
+                <label for="phone">Phone No. <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+                <label for="address">Address</label>
+                <textarea id="address" name="address"></textarea>
+            </div>
+            <div class="form-input">
+                <h2>Professional Details</h2>
+                <label for="resume">Resume or CV Upload <span class="required">*</span></label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                <label for="linkedin">LinkedIn or Other Professional Profiles</label>
+                <input type="text" id="linkedin" name="linkedin">
+            </div>
+            <div class="form-input">
+                <h2>Skills and Experience</h2>
+                <label for="programming_languages">Programming Languages <span class="required">*</span></label>
+                <input type="text" id="programming_languages" name="programming_languages" required>
+                <label for="previous_experience">Previous Work Experience <span class="required">*</span></label>
+                <textarea id="previous_experience" name="previous_experience" required></textarea>
+            </div>
+            <div class="form-input">
+                <h2>Education and Certifications</h2>
+                <label for="highest_degree">Highest Degree Attained <span class="required">*</span></label>
+                <input type="text" id="highest_degree" name="highest_degree" required>
+                <label for="certifications">Relevant Certifications <span class="required">*</span></label>
+                <textarea id="certifications" name="certifications" required></textarea>
+            </div>
+            <div class="form-input">
+                <h2>Additional Documents</h2>
+                <label for="cover_letter">Cover Letter Upload</label>
+                <input type="file" id="cover_letter" name="cover_letter" accept=".pdf,.doc,.docx">
+            </div>
+            <div class="submit-button">
+                <button type="submit">Submit Form</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
